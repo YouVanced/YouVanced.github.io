@@ -177,14 +177,14 @@
     <span class="doha-chopai-color-Yellow">YouVanced Extended - v19.47.53</span>
 </h1>
 
-<button class="animated-button" onclick="window.location.href = 'https://bit.ly/youvanced001';">
+<button class="rgb-button" onclick="window.location.href = 'https://bit.ly/youvanced001';">
     YouVanced v19.47.53 [ReVanced Extended]
 </button>
 
 <style>
     /* Button Styling */
-    .animated-button {
-        background: linear-gradient(270deg, #ff416c, #ff4b2b, #1e90ff, #00c6ff);
+    .rgb-button {
+        background: linear-gradient(270deg, red, orange, yellow, green, cyan, blue, violet);
         background-size: 400% 400%;
         color: white;
         border: none;
@@ -194,20 +194,18 @@
         border-radius: 12px;
         cursor: pointer;
         transition: all 0.4s ease-in-out;
-        box-shadow: 0 4px 15px rgba(255, 65, 108, 0.4);
-        position: relative;
-        overflow: hidden;
-        animation: gradientShift 6s ease infinite;
+        box-shadow: 0 4px 15px rgba(255, 255, 255, 0.4);
+        animation: rgbAnimation 6s linear infinite;
     }
 
-    /* Button Hover Effect */
-    .animated-button:hover {
-        transform: scale(1.1);
-        box-shadow: 0 6px 20px rgba(0, 198, 255, 0.6);
+    /* Hover Effect - White Glow */
+    .rgb-button:hover {
+        box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.8);
+        transform: scale(1.05);
     }
 
-    /* iPhone-like Animated Gradient */
-    @keyframes gradientShift {
+    /* Continuous RGB Color Animation */
+    @keyframes rgbAnimation {
         0% { background-position: 0% 50%; }
         50% { background-position: 100% 50%; }
         100% { background-position: 0% 50%; }
