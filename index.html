@@ -171,7 +171,6 @@
 
 
 
-
 <h1 class="unknown">
     <span class="doha-chopai-color-Red">Version</span> - 
     <span class="doha-chopai-color-Yellow">YouVanced Extended - v19.47.53</span>
@@ -187,7 +186,7 @@
         background: linear-gradient(270deg, red, orange, yellow, green, cyan, blue, violet);
         background-size: 400% 400%;
         color: white;
-        border: none;
+        border: 2px solid transparent;
         padding: 14px 28px;
         font-size: 16px;
         font-weight: bold;
@@ -198,9 +197,12 @@
         animation: rgbAnimation 6s linear infinite;
     }
 
-    /* Hover Effect - White Glow */
+    /* Hover Effect */
     .rgb-button:hover {
-        box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.8);
+        background: white;
+        color: black;
+        border: 2px solid white;
+        box-shadow: 0 0 25px 5px rgba(255, 255, 255, 0.8);
         transform: scale(1.05);
     }
 
@@ -211,6 +213,7 @@
         100% { background-position: 0% 50%; }
     }
 </style>
+
 
 
 
